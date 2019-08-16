@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install prerequirements
       run: |
-        sudo apt-get install -y python-pip
+        sudo apt-get install -y python-pip build-essential
     - name: Run test
       run: |
         pip install cwltool

@@ -9,9 +9,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - name: Install prerequirements
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        apt install -y python-pip
+        pip install cwltool
+    - name: Run test
+      run: |
+        cwltool splitlines.cwl --file inputfile.txt

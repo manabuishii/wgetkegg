@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: CommandLineTool
 hints:
     DockerRequirement:
-        dockerPull: alpine:3.10
+        dockerPull: 3.6.9-slim
 baseCommand: [python]
 arguments:
   - $(inputs.splitlines)

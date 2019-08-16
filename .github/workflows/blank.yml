@@ -12,7 +12,8 @@ jobs:
     - name: Install prerequirements
       run: |
         sudo apt-get install -y python-pip build-essential
+        pip install cwltool
+        pipenv install --system
     - name: Run test
       run: |
-        pip install cwltool
         cwltool splitlines.cwl --file inputfile.txt

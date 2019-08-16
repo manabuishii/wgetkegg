@@ -12,8 +12,7 @@ jobs:
     - name: Install prerequirements
       run: |
         sudo apt-get install -y python3-pip python3-wheel python3-setuptools build-essential
-        pip3 install cwltool pipenv
-        pipenv install --system
+        sudo pip3 install --system cwltool
     - name: Run test
       run: |
         cwltool splitlines.cwl --file inputfile.txt

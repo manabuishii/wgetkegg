@@ -12,7 +12,7 @@ jobs:
     - name: Install prerequirements
       run: |
         sudo apt-get install -y python-pip build-essential
-        pip install cwltool
+        pip install cwltool pipenv
         pipenv install --system
     - name: Run test
       run: |

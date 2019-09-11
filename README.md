@@ -49,4 +49,5 @@ keggid_list:
 # 次の目標
 
 - Rabix Composer で、同じワークフローを作る
+- 少し書き直す
 
